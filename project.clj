@@ -10,6 +10,7 @@
                  [org.clojure/tools.logging "0.3.1"]
                  [org.clojure/data.codec "0.1.0"]
                  [ch.qos.logback/logback-classic "1.0.13"]
+                 [pe-datomic-utils "0.0.1-SNAPSHOT"]
                  [org.slf4j/slf4j-api "1.7.5"]
                  [clj-time "0.8.0"]
                  [com.datomic/datomic-free "0.9.5130"
