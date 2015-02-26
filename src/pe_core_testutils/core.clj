@@ -6,10 +6,8 @@
 ;; Test fixture maker
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 (defn make-db-refresher-fixture-fn
-  [db-uri conn partition & schema-filenames]
+  [db-uri conn partition schema-files]
   (fn [f]
-    (reset! conn (ducore/refresh-db db-uri schema-filenames))
-    @(d/transact @conn [{:db/id (d/tempid :db.part/db)
-                         :db/ident partition
-                         :db.install/_partition :db.part/db}])
+    (reset! conn (ducore/refresh-db db-uri schema-files))
+    (ducore/transact-partition @conn partition)
     (f)))
