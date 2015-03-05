@@ -5,7 +5,7 @@
             [clojure.repl :refer :all]
             [clojure.stacktrace :refer (e)]
             [clojure.test :as test]
-            [pe-core-testutils.core :as core]
+            [pe-datomic-testutils.core :as core]
             [clojure.java.io :refer [resource]]
             [clojure.tools.namespace.repl :refer (refresh refresh-all)]))
 
