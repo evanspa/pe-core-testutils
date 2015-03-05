@@ -1,5 +1,7 @@
 # pe-datomic-testutils
 
+[![Build Status](https://travis-ci.org/evanspa/pe-datomic-testutils.svg)](https://travis-ci.org/evanspa/pe-datomic-testutils)
+
 A Clojure library of helper functions to aid in unit testing projects that
 leverage [Datomic](http://www.datomic.com).
 
