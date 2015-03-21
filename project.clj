@@ -1,4 +1,4 @@
-(defproject pe-datomic-testutils "0.0.2"
+(defproject pe-datomic-testutils "0.0.3-SNAPSHOT"
   :description "A Clojure library of helper functions to aid in unit testing projects that leverage Datomic."
   :url "https://github.com/evanspa/pe-datomic-testutils"
   :license {:name "MIT"
