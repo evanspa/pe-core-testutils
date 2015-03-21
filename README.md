@@ -15,5 +15,5 @@ pe-datomic-testutils is available from Clojars.  Add the following dependency to
 `project.clj` file:
 
 ```
-[pe-datomic-testutils "0.0.1"]
+[pe-datomic-testutils "0.0.2"]
 ```
